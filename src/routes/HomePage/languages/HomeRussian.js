@@ -1,6 +1,7 @@
 import React from "react";
 import { Typography, Grid } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
+import {NavLink} from "react-router-dom";
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
@@ -84,9 +85,11 @@ function HomeRussian() {
             чтобы помочь вам делать более информированные выборы. Это просто!
             Зарегистрируйтесь и сделайте свою жизнь безопаснее уже сейчас:
           </Typography>
-          <Typography style={{ marginTop: 5, color:"#c25364" }} variant="button" display="block">
-            <b>ссылка на форму регистрации</b>
-          </Typography>
+          <NavLink to="auth">
+            <Typography style={{ marginTop: 5, color:"#c25364" }} variant="button" display="block">
+              <b>ссылка на форму регистрации</b>
+            </Typography>
+          </NavLink>
         </div>
       </Grid>
     </div>
