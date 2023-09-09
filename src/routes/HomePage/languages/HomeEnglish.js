@@ -1,6 +1,7 @@
 import React from "react";
 import { Typography, Grid } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
+import {NavLink} from "react-router-dom";
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
@@ -48,7 +49,7 @@ function HomeEnglish() {
         <div>
           <Typography
             variant="body1"
-            color="primary"
+            color="inherit"
             align="center"
             gutterBottom
           >
@@ -64,7 +65,7 @@ function HomeEnglish() {
         <div>
           <Typography
             variant="body1"
-            color="primary"
+            color="inherit"
             align="center"
             gutterBottom
           >
@@ -77,7 +78,7 @@ function HomeEnglish() {
         <div>
           <Typography
             variant="body1"
-            color="primary"
+            // color="primary"
             align="center"
             gutterBottom
           >
@@ -86,9 +87,11 @@ function HomeEnglish() {
             to help you make more informed choices. It's easy!!! Sign up and
             make your life safer now:
           </Typography>
-          <Typography>
-            <b>link to registration form</b>
+          <NavLink to="auth">
+          <Typography style={{ marginTop: 5, color:"#c25364" }} variant="button" display="block">
+            link to registration form
           </Typography>
+          </NavLink>
         </div>
       </Grid>
     </div>

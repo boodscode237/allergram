@@ -33,7 +33,7 @@ function HomeRussian() {
         <div>
           <Typography
             variant="body1"
-            color="primary"
+            // color="primary"
             align="center"
             gutterBottom
           >
@@ -49,7 +49,7 @@ function HomeRussian() {
         <div>
           <Typography
             variant="body1"
-            color="primary"
+            // color="primary"
             align="center"
             gutterBottom
           >
@@ -62,7 +62,7 @@ function HomeRussian() {
         <div>
           <Typography
             variant="body1"
-            color="primary"
+            // color="primary"
             align="center"
             gutterBottom
           >
@@ -75,7 +75,7 @@ function HomeRussian() {
         <div>
           <Typography
             variant="body1"
-            color="primary"
+            // color="primary"
             align="center"
             gutterBottom
           >
@@ -84,7 +84,7 @@ function HomeRussian() {
             чтобы помочь вам делать более информированные выборы. Это просто!
             Зарегистрируйтесь и сделайте свою жизнь безопаснее уже сейчас:
           </Typography>
-          <Typography>
+          <Typography style={{ marginTop: 5, color:"#c25364" }} variant="button" display="block">
             <b>ссылка на форму регистрации</b>
           </Typography>
         </div>

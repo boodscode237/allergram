@@ -87,28 +87,15 @@ const RootLayout = () => {
                 key={i}
                 container
                 item
-                xs={8}
-                md={6}
+                xs
+                // xs={8}
+                // md={6}
                 direction="row"
                 justifyContent="space-evenly"
                 alignItems="center"
               >
                 <NavLink to={menu?.link}>
-                  <Box
-                    margin="auto"
-                    display="flex"
-                    alignItems="center"
-                    justifyContent="center"
-                    bgcolor="#0D163B"
-                    borderRadius="12px"
-                    boxShadow="12"
-                    sx={{
-                      minWidth: "22vw",
-                      minHeight: "20vh",
-                      backgroundColor: "#0D163B",
-                    }}
-                  >
-                    <Button color="inherit" className={classes.title}>
+                    <Button color="inherit" variant="outlined" className={classes.title}>
                       <Typography
                         variant="p"
                         component="h3"
@@ -120,7 +107,6 @@ const RootLayout = () => {
                         {menu.name}
                       </Typography>
                     </Button>
-                  </Box>
                 </NavLink>
               </Grid>
             ))}
@@ -181,8 +167,8 @@ const RootLayout = () => {
                           borderRadius="12px"
                           boxShadow="12"
                           sx={{
-                            minWidth: "22vw",
-                            minHeight: "20vh",
+                            // maxWidth: "22vw",
+                            // maxHeight: "20vh",
                             backgroundColor: "#0D163B",
                           }}
                       >

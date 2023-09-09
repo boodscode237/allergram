@@ -8,13 +8,6 @@ import HomeRussian from "./languages/HomeRussian";
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
-    // display: 'flex',
-    // flexWrap: 'wrap',
-    // '& > *': {
-    //   margin: theme.spacing(1),
-    //   width: theme.spacing(16),
-    //   height: theme.spacing(16),
-    // }
   },
   menuButton: {
     marginRight: theme.spacing(2),
