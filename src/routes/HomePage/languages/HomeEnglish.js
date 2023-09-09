@@ -33,7 +33,7 @@ function HomeEnglish() {
         <div>
           <Typography
             variant="body1"
-            color="primary"
+            color="inherit"
             align="center"
             gutterBottom
           >

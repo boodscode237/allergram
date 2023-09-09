@@ -11,6 +11,7 @@ import {
 import LockOutlinedIcon from "@material-ui/icons/LockOutlined";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 import Checkbox from "@material-ui/core/Checkbox";
+import axios from "axios";
 const defaultFormFields = {
   email: '',
   password: '',
@@ -26,8 +27,14 @@ const Login = () => {
     event.preventDefault()
     try {
       console.log(formFields)
-      // const {user} = await signInAuthUserWithEmailAndPassword(email, password)
-      // setCurrentUser(user)
+      axios
+          .get("http://dishes.ddns.net/api/users/", {
+            email,
+            password,
+          })
+          .then((res) => {
+            console.log(res)
+          })
       resetFormFields()
     } catch (error) {
       switch (error.code) {
